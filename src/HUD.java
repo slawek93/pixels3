@@ -29,13 +29,13 @@ public class HUD {
 		g.setColor(Color.white);
 		g.drawRect(15, 15, 200, 32);
 		
-		g.drawString("Score: " + score, 15, 64);
-		g.drawString("Level: " + level, 15, 80);
+		g.drawString("Punkty: " + score, 15, 64);
+		g.drawString("Poziom: " + level, 15, 80);
 		
 	}
 
 
-	public void score(int score){
+	public void setScore(int score){
 		this.score = score;
 	}
 	
