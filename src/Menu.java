@@ -30,6 +30,7 @@ public class Menu extends MouseAdapter{
 		if(mouseOver(mx, my, 210, 150, 200, 64)){
 			Game.gameState = Game.STATE.Game;
 			handler.addObject(new Player(Game.WIDTH/2-32, Game.HEIGHT/2-32, ID.Player, handler));
+			handler.clearEnemys();
 			handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
 		}
 		
